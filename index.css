@@ -1,0 +1,94 @@
+body{
+	margin:0px;
+	padding:0px;					
+}
+#welcome{
+	font-family:Showcard Gothic;
+	color: black;
+	opacity:0.8;
+	padding: 18px;
+	font-size: 50px;
+	text-align:center;
+	letter-spacing:5px;
+}
+#menubar{
+	background-color:black;
+	opacity:0.8;	
+	text-align:right;
+	padding:1%;
+	height:40px;
+}
+#menubar a{
+	color:white;
+	font-size:25px;
+	text-decoration:none;
+	padding:2%;
+	
+}
+#menubar a:hover{
+	color:#C03;
+}
+#img1{
+	background-image:url("sand.png");
+					min-height: 100%; 
+					background-repeat:no-repeat;
+						background-attachment:fixed;
+					background-size:100% 100%;
+}
+#quizzler{
+color: #777;
+background-color:white;
+text-align:center;
+padding:50px 80px;
+text-align: justify;
+
+}
+#q1{
+text-align:center;
+}
+#p{
+}
+#img2{
+	background-image:url("sand.png");
+					min-height: 60%;
+					background-position: center;
+					background-size: cover;
+					background-repeat:no-repeat;
+}
+#footer {
+	float: left;
+	margin-left: 0;
+	width: 90%;
+	height:55%;
+	display: block;
+	background-color: #000;
+	padding-right: 5%;
+	padding-left: 5%;
+}
+#socialheading {
+	
+	float: left;
+	margin-left: 0;
+	width: 98%;
+	display: block;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #FFF;
+	text-decoration: none;
+	padding: 2%;
+	border-bottom: 1px dashed #CCCCCC;
+	margin-bottom: 15px;
+}
+#copyrights {
+	
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFF;
+	text-align: center;
+	padding-top: 10%;
+	padding-bottom: 20px;
+}

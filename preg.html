@@ -1,0 +1,86 @@
+<html>
+<head>
+<title>preg</title>
+<script type="text/javascript" >
+function val()
+{
+var r1=document.f1.name.value;
+var r2=document.f1.phnno.value;
+var r3=document.f1.emailid.value;
+var r4=document.f1.password.value;
+var t1=r1.match(/[A-Za-z]+/);
+var t2=r2.match(/^[0-9]{10}$/);
+var t3=r3.match(/[A-Za-z0-9\.*]+\@[A-Za-z0-9]+\.([A-Za-z]{2,3})/);
+var t4=r4.match((/[A-Za-z0-9\.*]/);
+if(!t1)
+alert("enter valid name");
+if(!t2)
+alert("enter valid phoneno");
+if(!t3)
+alert("enter valid mailid");
+if(!t4)
+alert("enter valid password");
+if(t1&&t2&&t3&&t4)
+alert("regisered successfully");
+}
+</script>
+<style type="text/css">
+body,td,th {
+	color: #fff;
+	font-family: "Lucida Console", Monaco, monospace
+		}
+h1,h2,h3,h4,h5,h6 {
+	font-weight: bold;
+}
+h3 {
+	font-size: large;
+	color: #fff;
+}body{
+	background-image:url(q8.jpg);
+}
+	</style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+<center>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<center><span id="welcome">Welcome To Quizzler</span></center><br>
+<form name="f1" method="post" action="regtable.php" onsubmit="val()">
+<table cellspacing="20" >
+<h3>SIGNUP</h3>
+<tr>
+ <th>Username:</th>
+ <td><input type="text" name="regname" placeholder="mysuper@690" required ></td>
+ </tr>
+<tr>
+ <th>Phone no: </th>
+ <td><input type="text" name="regphnno" placeholder="9876543210" required ></td>
+ </tr>
+<tr>
+<th>Emailid: </th>
+<td><input type="email" name="emailid" placeholder="mysuper690@gmail.com" required></td>
+</tr>
+<tr>
+<th>Password:</th>
+<td><input type="password" name="password" placeholder="mysuper@690" required></td>
+</tr>
+<tr>
+<th height="24">Gender: </th>
+<td>Male
+<input type="radio" name="radiobutton"> 
+Female
+<input type="radio" name="radiobutton"></td>
+</tr>
+<tr>
+<th>Date of Birth:</th>
+<td><input type="date" name="dob"></td>
+</tr>
+</table><br>
+<input name="submit" type="submit" style=" background-color:silver; font-size:16px; border-radius:10px" value="Register">
+<input type="reset" name="cancel" value="Cancel" style=" background-color:silver; font-size:16px; border-radius:9px">
+</form> 
+</center>
+</body>
+</html>
